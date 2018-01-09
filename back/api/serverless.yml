@@ -1,0 +1,156 @@
+
+service: attendbot-api
+
+
+provider:
+  name: aws
+  runtime: nodejs6.10
+  profile: impbots
+  stage: ${file(./../settingsSeverless.js):apiVersion}
+  region: eu-central-1
+  role: arn:aws:iam::342292996338:role/impbotsAllowDynamo
+
+modules:
+  exclude:
+     - aws-sdk
+  deepExclude:
+    - aws-sdk
+
+plugins:
+  - serverless-webpack 
+
+
+functions:
+
+  loginSendSms:
+    handler: src/login/sendSms.f
+    events:
+      - http:
+          path: login/needMobileToken
+          method: put
+          cors: ${file(./../settingsSeverless.js):apiCORS}
+
+  loginConsumeSms:
+    handler: src/login/consumeSms.f
+    events:
+      - http:
+          path: login/confirmMobileToken
+          method: put
+          cors: ${file(./../settingsSeverless.js):apiCORS}
+
+  registerCheckToken:
+    handler: src/register/checkToken.f
+    events:
+      - http:
+          path: code/guild/{token}
+          method: get
+          cors: ${file(./../settingsSeverless.js):apiCORS}
+
+  registerCheckCharName:
+    handler: src/register/checkCharName.f
+    events:
+      - http:
+          path: character/check/{charName}/{token}
+          method: get
+          cors: ${file(./../settingsSeverless.js):apiCORS}
+
+  registerSendSms:
+    handler: src/register/sendSms.f
+    events:
+      - http:
+          path: register/needMobileToken
+          method: put
+          cors: ${file(./../settingsSeverless.js):apiCORS}
+
+  registerConsumeSms:
+    handler: src/register/consumeSms.f
+    events:
+      - http:
+          path: register/confirmMobileToken
+          method: put
+          cors: ${file(./../settingsSeverless.js):apiCORS}
+
+  loggedInAuthorizer:
+    handler: src/helpers/authorization/authorizer.f
+
+  userSettings:
+    handler: src/authorized/user/getUser.f
+    events:
+      - http:
+          path: user/
+          method: get
+          authorizer: loggedInAuthorizer
+          cors: ${file(./../settingsSeverless.js):apiCORS}
+
+  getEvents:
+    handler: src/authorized/events/activeEvents.f
+    events:
+      - http:
+          path: events/true/
+          method: get
+          authorizer: loggedInAuthorizer
+          cors: ${file(./../settingsSeverless.js):apiCORS}
+
+  getAttendance:
+    handler: src/authorized/guild/getAttendance.f
+    events:
+      - http:
+          path: guild/attendance/
+          method: get
+          authorizer: loggedInAuthorizer
+          cors: ${file(./../settingsSeverless.js):apiCORS}
+
+  deleteUser:
+    handler: src/authorized/user/deleteUser.f
+    events:
+      - http:
+          path: user/
+          method: delete
+          authorizer: loggedInAuthorizer
+          cors: ${file(./../settingsSeverless.js):apiCORS}
+
+  kickUser:
+    handler: src/authorized/guild/kickUser.f
+    events:
+      - http:
+          path: guild/kick/{userId}
+          method: post
+          authorizer: loggedInAuthorizer
+          cors: ${file(./../settingsSeverless.js):apiCORS}
+
+  changeRole:
+    handler: src/authorized/user/changeRole.f
+    events:
+      - http:
+          path: user/roleChange/{userId}
+          method: post
+          authorizer: loggedInAuthorizer
+          cors: ${file(./../settingsSeverless.js):apiCORS}
+
+  inviteCode:
+    handler: src/authorized/guild/getInviteCode.f
+    events:
+      - http:
+          path: guild/invite
+          method: get
+          authorizer: loggedInAuthorizer
+          cors: ${file(./../settingsSeverless.js):apiCORS}
+
+  attendGet:
+    handler: src/attend/getAttend.f
+    events:
+      - http:
+          path: attend/{token}
+          method: get
+          cors: ${file(./../settingsSeverless.js):apiCORS}
+
+  attendSave:
+    handler: src/attend/saveAttend.f
+    events:
+      - http:
+          path: attend/{token}
+          method: post
+          cors: ${file(./../settingsSeverless.js):apiCORS}
+
+
+

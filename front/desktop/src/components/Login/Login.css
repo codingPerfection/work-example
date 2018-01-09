@@ -1,0 +1,126 @@
+.login{
+    height:100%;
+    width:400px;
+    background-color: #101010;
+    margin:0px auto;
+    text-align: center;
+}
+
+.login h1{
+    font-size:24px;
+    font-weight: 800;
+    margin:0px;
+    padding: 0px;
+    padding-bottom: 20px;
+    color:#fff000;
+}
+
+.login .msg{
+    font-size:24px;
+    font-weight: 800;
+}
+
+.login input{
+    border-radius: 10px;
+    background-color: #c9c9c9;
+    border-width:0px;
+    padding:12px 15px;
+    font-size:20px;
+    outline-width: 0px!important;
+    margin-top:25px;
+    font-weight: 600;
+}
+
+.login .btn{
+    padding:15px 20px;
+    border-radius: 5px;
+    font-size: 20px;
+    font-weight: 700;
+    color:#FFF;
+    background-color: #106c71;
+    margin-top:30px;
+    outline-width: 0px;
+    border-width: 0px;
+    cursor: pointer;
+    opacity: 1;
+    transition: all 0.2s linear;
+}
+
+.login .btn:hover{
+    background-color: #0d4e52;
+}
+
+.login .explain{
+    margin-top:20px;
+    opacity: 0.7;
+}
+
+.login .loaderContainer{
+    width:100%;
+    background-color:#000;
+    padding:10px 0px;
+    margin-top:10px;
+}
+
+.login .error{
+    margin-top:10px;
+    color:#ff0000
+}
+
+.login .btn2{
+    margin-left:20px;
+    background-color:#309415;
+}
+
+.login .btn2:hover{
+    background-color:#1e5b0e;
+}
+
+.login .set{
+    background-color:#000;
+    color:rgba(255,255,0,0.7);
+    transition: color 0.2s linear;
+    padding:20px;
+    font-weight: 700;
+    font-size:22px;
+    margin-bottom: 5px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.login .phoneNumber{
+    margin-bottom: 30px;
+}
+
+
+
+
+.login .set:hover{
+    color:#ffff00;
+}
+
+.login .set.disabled{
+    color:#FFF!important;
+    background-color: transparent;
+    cursor: inherit!important
+}
+
+.login .aboutContainer{
+    padding:15px 5px;
+}
+
+.login .aboutInfo {
+    color:#fff;
+    font-size:16px;
+    font-weight: 400;
+    opacity: 0.6;
+    text-decoration: underline;
+    display: block;
+    padding: 8px 0px;
+    text-align: center;
+    transition: all 0.2s linear;
+}
+
+.login .aboutInfo:hover{
+    opacity: 1;
+}

@@ -1,0 +1,34 @@
+.spriteUi {
+    background-repeat: no-repeat;
+    display: block;
+}
+
+.spriteUi-arrowEvent {
+    width: 24px;
+    height: 28px;
+    background-position: -5px -5px;
+}
+
+.spriteUi-checkboxCheck {
+    width: 100px;
+    height: 100px;
+    background-position: -39px -5px;
+}
+
+.spriteUi-closeWhite {
+    width: 100px;
+    height: 100px;
+    background-position: -5px -115px;
+}
+
+.spriteUi-editPencilWhite {
+    width: 100px;
+    height: 100px;
+    background-position: -115px -115px;
+}
+
+.spriteUi-trashcanWhite {
+    width: 100px;
+    height: 100px;
+    background-position: -149px -5px;
+}

@@ -1,0 +1,13 @@
+.register .setContainer{
+    padding-bottom:25px;
+}
+
+.register .set{
+    padding:8px;
+}
+
+.register .guild{
+    font-size:18px;
+    font-weight: 600;
+    color:#ffff00;
+}

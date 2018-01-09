@@ -1,0 +1,49 @@
+#copyBox .copyContainer{
+    padding:10px 0px;
+    width:100%;
+    display: flex;
+}
+
+
+
+#copyBox input, #copyBox textarea{
+    display:inline-block;
+    width:100%;
+    flex-shrink: 1;
+    background-color:#c9c9c9;
+    border:0px solid #c9c9c9;
+    border-radius: 0px;
+    outline-width: 0px;
+    font-size:16px;
+    font-weight: 600;
+    padding: 15px 10px;
+    resize: none;
+}
+
+#copyBox .btn{
+    display: inline-block;
+    height: 50px;
+    padding: 10px 25px;
+    box-sizing: border-box;
+    cursor:pointer;
+    font-weight: 800;
+    font-size:20px;
+    background-color:#158494;
+    transition:  background-color 0.2s;
+}
+
+#copyBox .btn
+
+#copyBox .btn:hover{
+    background-color:#022b47;
+}
+
+#copyBox .confirmMsg{
+    padding: 10px;
+    color: #0ff;;
+    font-weight: 700;
+    font-size: 18px;
+    display: block;
+    background-color: #222;
+}
+

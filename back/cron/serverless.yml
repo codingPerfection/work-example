@@ -1,0 +1,53 @@
+
+service: cron
+
+
+provider:
+  name: aws
+  runtime: nodejs6.10
+  profile: impbots
+  stage: ${file(./../settingsSeverless.js):cronVersion}
+  region: eu-central-1
+  role: arn:aws:iam::342292996338:role/impbotsAllowDynamo
+
+package:
+  include: ./../tables
+
+plugins:
+  - serverless-webpack 
+
+functions:
+  eventSchedule:
+   handler: src/eventSchedule.f
+   timeout: 100
+   events:
+     - schedule: cron(0/30 * * * ? *)
+
+  eventOpen:
+    handler: src/events/openEvent.f
+    timeout: 100
+    events:
+      - sns: ${file(./../sns.js):event.open}
+
+  eventClose:
+    handler: src/events/closeEvent.f
+    events:
+      - sns: ${file(./../sns.js):event.close}
+
+  eventArchive:
+    handler: src/events/archiveEvent.f
+    timeout: 60
+    events:
+      - sns: ${file(./../sns.js):event.archive}
+
+  eventCreate:
+    handler: src/events/createEvent.f
+    timeout: 6
+    events:
+      - sns: ${file(./../sns.js):event.archive}
+      - sns: ${file(./../sns.js):event.create}
+
+
+
+
+

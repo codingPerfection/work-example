@@ -1,0 +1,94 @@
+.spriteChar {
+    background-repeat: no-repeat;
+    display: block;
+}
+
+.spriteChar-deathKnight {
+    width: 60px;
+    height: 60px;
+    background-position: -5px -5px;
+}
+
+.spriteChar-demonHunter {
+    width: 60px;
+    height: 60px;
+    background-position: -75px -5px;
+}
+
+.spriteChar-dps {
+    width: 77px;
+    height: 75px;
+    background-position: -145px -5px;
+}
+
+.spriteChar-druid {
+    width: 60px;
+    height: 60px;
+    background-position: -5px -90px;
+}
+
+.spriteChar-healer {
+    width: 77px;
+    height: 75px;
+    background-position: -75px -90px;
+}
+
+.spriteChar-hunter {
+    width: 60px;
+    height: 60px;
+    background-position: -162px -90px;
+}
+
+.spriteChar-mage {
+    width: 60px;
+    height: 60px;
+    background-position: -5px -160px;
+}
+
+.spriteChar-monk {
+    width: 60px;
+    height: 60px;
+    background-position: -162px -160px;
+}
+
+.spriteChar-paladin {
+    width: 60px;
+    height: 60px;
+    background-position: -232px -5px;
+}
+
+.spriteChar-priest {
+    width: 60px;
+    height: 60px;
+    background-position: -232px -75px;
+}
+
+.spriteChar-rouge {
+    width: 60px;
+    height: 60px;
+    background-position: -232px -145px;
+}
+
+.spriteChar-shaman {
+    width: 60px;
+    height: 60px;
+    background-position: -75px -215px;
+}
+
+.spriteChar-tank {
+    width: 77px;
+    height: 75px;
+    background-position: -232px -215px;
+}
+
+.spriteChar-warlock {
+    width: 60px;
+    height: 60px;
+    background-position: -302px -5px;
+}
+
+.spriteChar-warrior {
+    width: 60px;
+    height: 60px;
+    background-position: -302px -75px;
+}

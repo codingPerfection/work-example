@@ -1,0 +1,13 @@
+#modalRename  #modalCancel #confirmBox .submit{
+    background-color: #309415;
+}
+
+#modalRename  #modalCancel #confirmBox .submit:hover{
+    background-color: #107203;
+}
+
+#modalRename  #modalCancel #confirmBox  input{
+    width:400px;
+    text-transform: uppercase;
+}
+

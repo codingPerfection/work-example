@@ -1,0 +1,36 @@
+#selectBox{
+    padding:18px 0px;
+}
+
+#selectBox > div{
+    display:inline-block;
+    margin: 0px 10px;
+    cursor:pointer;
+    position: relative;
+
+}
+
+#selectBox > div> div{
+    opacity: 0.5;
+    transition: border-width 0.2s ;
+    border-radius: 50%;
+    position: absolute;
+    top:0px;
+    left:0px;
+    right:0px;
+    bottom: 0px;
+    margin:auto;
+    cursor:pointer;
+    border-width: 0;
+}
+
+#selectBox>div > div:hover{
+    opacity: 0.7;
+
+
+}
+
+#selectBox >div> div.selected{
+    opacity: 1;
+    border:3px solid #fff;
+}

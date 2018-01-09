@@ -1,0 +1,375 @@
+#attendanceRate{
+    height: 100%;
+    box-sizing: border-box;
+    width:100%;
+    flex-shrink: 1;
+    display:flex;
+    flex-direction: column;
+}
+
+#attendanceRate .attendanceRateContent{
+    height:100%;
+}
+
+#attendanceRate .attendanceRateContent .attendanceRateBackground{
+    height:auto;
+    min-height: 100%;
+    background-color: rgba(34,34,34,0.38);    
+    padding:20px 38px; 
+    box-sizing: border-box;
+}
+
+
+#attendanceRate .addPadding{
+    padding-top:50px;
+}
+
+#attendanceRate section{
+    padding-top:30px;
+}
+
+
+#attendanceRate .row{
+    display:flex;
+    flex-direction: row;
+}
+
+#attendanceRate .row .col1{
+    width:180px;
+    margin-right: 10px;
+    box-sizing: border-box;
+    display:inline-block;
+    flex-shrink: 0;
+}
+
+#attendanceRate .row .col2, #attendanceRate .row .col3{
+    width:210px;
+    margin-right: 20px;
+    display:inline-block;
+}
+
+
+#attendanceRate h3{
+    font-weight: 700;
+    font-size:15px;
+    padding:0px;
+    margin: 0px;
+}
+
+#attendanceRate .header{
+    margin-top:20px;
+    background-color: #151515;
+    padding:5px 0px;
+}
+
+#attendanceRate .row.notInfo .col1{
+    position: relative;
+    padding-left: 45px;
+}
+
+#attendanceRate .row .col1 .icon{
+    position: absolute;
+    left:-10px;
+    top:0px;
+    bottom: 0px;
+    position: absolute;
+    margin:auto 0px;
+}
+
+#attendanceRate .header .icon{
+    zoom:0.6;
+}
+
+#attendanceRate .header .col1 .text{
+    color:#e4d702;
+    font-weight: 700;
+    font-size:16px;
+    padding-top:5px;
+    display: inline-block;
+    text-transform: uppercase;
+    padding-left: 10px;
+}
+
+#attendanceRate .header .col2, #attendanceRate .header .col3{
+    background-color: rgba(60,60,60,0.32);
+    height:30px;
+    position: relative;
+}
+
+
+#attendanceRate .header .col2 .text, #attendanceRate .header .col3 .text{
+    text-align: center;
+    left: 0px;
+    right: 0px;
+    position: absolute;
+    top:2px;
+    font-size: 20px;
+    font-weight: 600;
+    z-index: 1;
+}
+
+#attendanceRate .header .col2 .fill, #attendanceRate .header .col3 .fill{
+    text-align: center;
+    left: 0px;
+    position: absolute;
+    top:0px;
+    height: 100%;
+    background-color: #34423f;
+    width:55%;
+}
+
+#attendanceRate .header .col4{
+    font-size: 18px;
+    font-weight: 600;
+    color:#fff;
+    opacity: 0.67;
+    padding-top: 3px;
+    padding-left:10px;
+}
+
+#attendanceRate .peoplePadding{
+    padding:8px 0px;
+    background-color: #101010;
+}
+
+#attendanceRate .people{
+    background-color: #151816;
+    padding: 3px 0px;
+}
+
+#attendanceRate .people .col234{
+    display:flex;
+    width:100%;
+    flex-shrink: 1;
+}
+
+#attendanceRate .people .info{
+    opacity:0.5;
+    font-weight:400;
+    font-size:15px;
+    padding-top: 4px;
+}
+
+#attendanceRate .people .col1 .icon{
+    zoom:0.6;
+    left:-8px;
+}
+
+#attendanceRate .people .col1 .text {
+    padding-top: 3px;
+    display: inline-block;
+}
+
+#attendanceRate .people .col1 .text{
+    padding-top:3px;
+    position: absolute;
+    top: 0px;
+    bottom: 0px;
+    margin: auto 0px;
+    height: 24px;
+}
+
+#attendanceRate .people .col1.editable{
+    cursor:pointer;
+    transition:all 0.2s linear;
+}
+
+#attendanceRate .people .col1.editable:hover{
+    background-color: rgba(0,0,0,0.4);
+}
+
+
+
+#attendanceRate .people .col1 .editIcon{
+    opacity:0;
+    top: 0px;
+    bottom: 0px;
+    position: absolute;
+    margin: auto 0px;
+    left:-9px;
+    border-radius: 50%;
+    background-color: #000;
+    transition: all 0.2s linear;
+    height: 40px;
+    width: 40px;
+    padding: 8px 10px;
+    box-sizing: border-box;
+    transition: all 0.2s linear;
+}
+
+#attendanceRate .people .col1 .editIcon .icon{
+    zoom:0.25;
+    position: initial;
+}
+
+#attendanceRate .people .col1.editable:hover .editIcon{
+    opacity:0.7;
+}
+
+
+#attendanceRate .people .col1.editable .text{
+    text-decoration: underline;
+}
+
+#attendanceRate .people .col2, #attendanceRate .people .col3{
+    background-color: #202221;
+    height:26px;
+    position: relative;
+    flex-shrink: 0;
+}
+
+#attendanceRate .people .col2 .text, #attendanceRate .people .col3 .text{
+    text-align: center;
+    left: 0px;
+    right: 0px;
+    position: absolute;
+    top:2px;
+    font-size: 17px;
+    font-weight: 400;
+    z-index: 1;
+    color: rgba(255,255,255,0.6)
+}
+
+#attendanceRate .people .col2 .fill, #attendanceRate .people .col3 .fill{
+    text-align: center;
+    left: 0px;
+    position: absolute;
+    top:0px;
+    height: 100%;
+    background-color: #292b27;
+    width:55%;
+}
+
+#attendanceRate .people .col4 .text {
+    font-size: 16px;
+    font-weight: 400;
+    color: #fff;
+    opacity: 0.6;
+    padding-top: 4px;
+    padding-left: 10px;
+    display:inline-block;
+}
+
+#attendanceRate .headerSpacing{
+    padding:5px 0px;
+    background-color: #101010;
+}
+
+#attendanceRate .headerSpacing .people{
+    padding:0px;
+}
+
+#attendanceRate .managerInfo{
+    font-size:16px;
+    font-weight: 400;
+    color: rgba(255,255,255,0.7);
+    padding:20px 0px;
+}
+
+#attendanceRate .managerInfo .formulaInfo .additional{
+    font-size: 14px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+}
+
+#attendanceRate .managerInfo .manager{
+    color: rgba(255,255,255,0.9);
+    padding-top:10px;
+    padding-top: 30px;
+    font-weight: 600;
+}
+
+
+#attendanceRate .quitButton{
+    padding:14px;
+    background-color:rgba(0,0,0,0.7);
+    width:500px;
+    cursor: pointer;
+    opacity: 0.7;
+    transition: all 0.2s linear;
+}
+
+#attendanceRate .quitButton:hover{
+    opacity: 1;
+}
+
+#attendanceRate .quitButton .icon{
+    zoom:0.5;
+    display:inline-block;
+}
+#attendanceRate .quit {
+    margin-left: 20px;
+    display:inline-block;
+}
+
+#attendanceRate .quit .txt{
+    font-weight: 800;
+    font-size:20px;
+
+}
+
+#attendanceRate .quit .explain{
+    font-size:16px;
+    color:#bbb;
+    margin-top:5px;
+}
+
+#attendanceRate .people .col234 .btn{
+    width:100%;
+    height:20px;
+    padding: 3px;
+    background-color: #941515;
+    cursor:pointer;
+    font-weight: 800;
+    font-size:15px;
+    text-align: center;
+    transition: all 0.2s linear;
+}
+
+#attendanceRate .people .col234 .btn:hover{
+    background-color:#720303;
+}
+
+#attendanceRate .people .col234 .btn.btnRole{
+    background-color:#1e560f;
+}
+
+#attendanceRate .people .col234 .btn.btnRole:hover{
+    background-color:#0c340c;
+}
+
+#attendanceRate .people .col234 .col4{
+    width:100%;
+    flex-shrink: 1;
+    position: relative;
+}
+
+#attendanceRate .people.editMode {
+    background-color: rgba(0,0,0,0.8);
+    padding: 4px 2px;
+}
+
+#attendanceRate .people .btnClose {
+    float:right;
+    position: absolute;
+    right: -8px;
+    opacity: 1;
+    background-color: #000;
+    border-radius: 50%;
+    top:0px;
+    cursor:pointer;
+    height:45px;
+    width:45px;
+    bottom:0px;
+    margin:auto 0px;;
+}
+
+#attendanceRate .people .btnClose  .icon{
+    zoom:0.45;
+    opacity: 0.8;
+    transition: all 0.2s;
+}
+
+#attendanceRate .people .btnClose:hover .icon{
+    opacity: 1;
+}

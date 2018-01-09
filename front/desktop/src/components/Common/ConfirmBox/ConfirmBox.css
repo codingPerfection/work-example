@@ -1,0 +1,40 @@
+#confirmBox{
+    padding:10px 0px;
+}
+
+#confirmBox  .error{
+    font-weight: 400;
+    font-size:14px;
+    color:red;
+    padding-bottom: 10px;
+}
+
+#confirmBox input{
+    padding:12px 15px;
+    box-sizing: border-box;
+    width:300px;
+    display: inline-block;
+    vertical-align: middle;
+    background-color: #c9c9c9;
+    outline-width: 0px;
+    border : 0px solid #fff;
+    font-size:18px;
+    font-weight: 600;
+}
+
+#confirmBox .submit{
+    height:55px;
+    padding:5px 15px;
+    font-weight: 700;
+    font-size:30px;
+    display:inline-block;
+    vertical-align: middle;
+    box-sizing: border-box;
+    cursor:pointer;
+    transition: all 0.2s linear;
+    background-color: #309415;
+}
+
+#confirmBox .submit:hover{
+    background-color: #107203
+}

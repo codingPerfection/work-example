@@ -1,0 +1,33 @@
+#modalChangeRole #selectBox .icon{
+    zoom: 0.8;
+}
+
+#modalChangeRole #selectBox>div{
+    height:66px;
+    width:68px;
+}
+
+
+#modalChangeRole #selectBox{
+    padding: 24px 0px;
+    padding-bottom: 10px;
+    display:inline-block;
+    vertical-align: middle;
+}
+
+#modalChangeRole #confirmBox {
+    display:inline-block;
+    vertical-align: middle;
+    margin-left: 40px;
+}
+
+#modalChangeRole #confirmBox .submit{
+    width:200px;
+    background-color: #1e560f;
+    text-align: center;
+    display:inline-block;
+}
+
+#modalChangeRole #confirmBox .submit:hover{
+    background-color: #0c340c;
+}

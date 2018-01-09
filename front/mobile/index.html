@@ -1,0 +1,103 @@
+<html>
+
+<head>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.19.1/moment.min.js"></script>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" sizes="96x96" href="/a/stat/img/favicon-96x96.png">
+  <link rel="stylesheet" type="text/css" href="/a/stat/style.css">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700,800" rel="stylesheet">
+</head>
+
+<body>
+  <div class="img">
+    <div class="overlay">
+
+      <div class="spacer"></div>
+
+      <div class="loader" id="loader">
+        <img src="/a/stat/img/loader.gif" />
+      </div>
+
+      <div class="content" id="error" style="display:none">
+        <h1>THIS RAID IS EITHER IN PROGRESS OR PASSED. SRY :'( </h1>
+      </div>
+
+      <div class="content" id="content" style="display:none">
+        <h1>ARE YOU COMING?</h1>
+        <h2>Char:
+          <span id="charName">  </span>
+        </h2>
+
+        <div class="contentInfo" id="contentInfo">
+          <div class="guild" id="guild"></div>
+          <div class="time">in
+            <span id="timeIn">2h 20min</span>
+          </div>
+          <div class="event" id="eventName">TOMB OF SARGERAS</div>
+          <div class="fromTo" id="timeFromTo">
+            19:30-23:00
+          </div>
+          <div class="warning">
+            (your local time)
+          </div>
+        </div>
+
+        <div class="o1"  id="o1" style="display:none">
+          <div class="late" id="clickLate">I will be late</div>
+          <div class="btns">
+            <div class="no" id="clickNo">NO</div>
+            <div class="yes" id="clickYes">YES</div>
+          </div>
+        </div>
+
+        <div class="o2" id="o2" style="display:none">
+          <div class="msg">You responded:</div>
+          <div class="response" id="cancelResponse">
+            <img class="close" src="/a/stat/img/close.png" />
+            <div class="btn yes" id="responseYes" style="display:none">
+              YES
+            </div>
+            <div class="btn no" id="responseNo" style="display:none">
+              NO
+            </div>
+            <div class="late" id="responseLate" style="display:none">
+              I will be late: <span id="responseLateTime">1h 15min</span>
+            </div>
+          </div>
+          <div class="funny">
+            Imps have notifed raid organisers
+          </div>
+        </div>
+
+        <div class="o3" id="o3" style="display:none">
+          <div class="nav" id="lateBack">
+            <img class="back" src="/a/stat/img/back.png" />
+            <div class="txt">
+              I will be late:
+            </div>
+          </div>
+          <div id="lateBtns">
+            <div class="btn" lateTime="15"> 15 min </div>
+            <div class="btn" lateTime="35"> 30 min </div>
+            <div class="btn" lateTime="45"> 45 min </div>
+            <div class="btn" lateTime="60"> 1 h </div>
+            <div class="btn" lateTime="75"> 1 h 15 min </div>
+            <div class="btn" lateTime="90"> 1 h 30 min </div>
+            <div class="btn" lateTime="105"> 1 h 45 min </div>
+            <div class="btn" lateTime="120"> 2 h </div>
+            <div class="btn" lateTime="135"> 2h 15 min </div>
+            <div class="btn" lateTime="150"> 2h 30 min </div>
+            <div class="btn" lateTime="165"> 2h 45 min </div>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="spacer"></div>
+
+    </div>
+  </div>
+  <script src="/a/stat/script.js"></script>
+</body>
+
+</html>

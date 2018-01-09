@@ -1,0 +1,45 @@
+#modalCancel h2{
+    font-weight: 600;
+    font-size:18px;
+}
+#modalCancel .check {
+    padding-top:10px;
+}
+
+#modalCancel .check .text{
+    font-size:16px;
+    font-weight: 600;
+    display: inline-block;
+    padding-left:16px;
+    padding-top:0px;
+    vertical-align: middle;
+}
+
+#modalCancel .explain{
+    font-weight: 400;
+    font-size:14px;
+    opacity: 0.45;
+    padding-top:14px;
+}
+
+#modalCancel .question{
+    font-size:16px;
+    font-weight: 600;
+    padding-top:28px;
+    color:#ff0;
+}
+
+#modalCancel .instructions{
+    font-size:16px;
+    font-weight: 400;
+    padding-top:14px;
+}
+
+#modalCancel #confirmBox .submit{
+    background-color:#941515;
+}
+
+
+#modalCancel #confirmBox .submit:hover{
+    background-color:#720303;
+}

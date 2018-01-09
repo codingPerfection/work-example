@@ -1,0 +1,21 @@
+#inviteWow .breakDown .emptyMsg{
+    opacity: 1;
+}
+
+#inviteWow .fade{
+    color: rgba(255,255,255,0.5)
+}
+
+#inviteWow li a{
+    color:#fff;
+    text-decoration: underline;
+    opacity: 0.8;
+    font-size: inherit;
+    font-weight: inherit;
+    font-family: inherit;
+    transition: all 0.2s linear;
+}
+
+#inviteWow li a:hover{
+    opacity: 1;
+}

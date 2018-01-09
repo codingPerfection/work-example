@@ -1,0 +1,17 @@
+#checkbox{
+    height:25px;
+    width:25px;
+    background-color: #282828;
+    border-radius: 5px;
+    border:2px solid #686868;
+    position: relative;
+    display: inline-block;
+    vertical-align: middle;
+    cursor: pointer;
+}
+
+#checkbox .icon{
+    height:100%;
+    width:100%;
+    zoom:0.25;
+}
